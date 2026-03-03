@@ -2,49 +2,49 @@ from config import OWNER_ID, SUPPORT_GRP
 from dixitabot import app
 
 START = f"""
-<b>๏ ʜᴇʏ, ɪ ᴀᴍ <a href='https://t.me/{app.username}'>{app.name}</a></b>
-<b>➻ ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ</b>
-<b>──────────────</b>
-<b>➻ ᴜsᴀɢᴇ /chatbot [ᴏɴ/ᴏғғ]</b>
-<b><spoiler>๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ.</spoiler></b>
+<b>• hey, i am <a href='https://t.me/{app.username}'>{app.name}</a></b>
+<b>- an ai based chatbot</b>
+<b>--------------</b>
+<b>- usage /chatbot [on/off]</b>
+<b><spoiler>• hit help button for help.</spoiler></b>
 """
 
 HELP_READ = f"""
-<u><b>ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ {app.name}</b></u>
-<u><b>ᴀʀᴇ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ!</b></u>
-<b>ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ:/</b>
-<b>──────────────</b>
+<u><b>commands for {app.name}</b></u>
+<u><b>are given below!</b></u>
+<b>all the commands can be used with:/</b>
+<b>--------------</b>
 <b><spoiler>©️ <a href='tg://user?id={OWNER_ID}'>Owner</a></spoiler></b>
 """
 
 TOOLS_DATA_READ = f"""
-<u><b>ᴛᴏᴏʟs ғᴏʀ {app.name} ᴀʀᴇ:</b></u>
-<b>➻ ᴜsᴇ /repo ғᴏʀ ɢᴇᴛᴛɪɴɢ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ!</b>
-<b>──────────────</b>
-<b>➻ ᴜsᴇ /ping ғᴏʀ ᴄʜᴇᴄᴋɪɴɢ ᴛʜᴇ ᴘɪɴɢ ᴏғ {app.name}</b>
-<b>──────────────</b>
-<b>➻ ᴜsᴇ /id ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴜsᴇʀ ɪᴅ, ᴄʜᴀᴛ ɪᴅ ᴀɴᴅ ᴍᴇssᴀɢᴇ ɪᴅ ᴀʟʟ ɪɴ ᴀ sɪɴɢʟᴇ ᴍᴇssᴀɢᴇ.</b>
-<b>──────────────</b>
+<u><b>tools for {app.name} are:</b></u>
+<b>- use /repo for getting source code!</b>
+<b>--------------</b>
+<b>- use /ping for checking the ping of {app.name}</b>
+<b>--------------</b>
+<b>- use /id to get your user id, chat id and message id all in a single message.</b>
+<b>--------------</b>
 <b><spoiler>©️ <a href='tg://user?id={OWNER_ID}'>Owner</a></spoiler></b>
 """
 
 CHATBOT_READ = f"""
-<u><b>ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ {app.name}</b></u>
-<b>➻ ᴜsᴇ /chatbot ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.</b>
-<b>๏ ɴᴏᴛᴇ ➻ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ᴄʜᴀᴛʙᴏᴛ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!</b>
-<b>───────────────</b>
+<u><b>commands for {app.name}</b></u>
+<b>- use /chatbot to enable/disable the chatbot.</b>
+<b>• note - the above command for chatbot work in group only!!</b>
+<b>---------------</b>
 <b><spoiler>©️ <a href='tg://user?id={OWNER_ID}'>Owner</a></spoiler></b>
 """
 
-SOURCE_READ = f"<b>ʜᴇʏ, ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴏғ <a href='https://t.me/{app.username}'>{app.name}</a> ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.</b>\n<b>ᴘʟᴇᴀsᴇ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ &amp; ɢɪᴠᴇ ᴛʜᴇ sᴛᴀʀ ✯</b>\n<b>──────────────────</b>\n<b>ʜᴇʀᴇ ɪs ᴛʜᴇ <a href='https://github.com/bisug/DAXXCHATBOT'>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ</a></b>\n<b>──────────────────</b>\n<b>ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴀᴛ <a href='https://t.me/{SUPPORT_GRP}'>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a>.</b>\n<b><spoiler>©️ <a href='tg://user?id={OWNER_ID}'>Owner</a></spoiler></b>"
+SOURCE_READ = f"<b>hey, the source code of <a href='https://t.me/{app.username}'>{app.name}</a> is given below.</b>\n<b>please fork the repo &amp; give the star *</b>\n<b>------------------</b>\n<b>here is the <a href='https://github.com/bisug/DAXXCHATBOT'>source code</a></b>\n<b>------------------</b>\n<b>if you face any problem then contact at <a href='https://t.me/{SUPPORT_GRP}'>support chat</a>.</b>\n<b><spoiler>©️ <a href='tg://user?id={OWNER_ID}'>Owner</a></spoiler></b>"
 
-ADMIN_READ = f"sᴏᴏɴ"
+ADMIN_READ = f"soon"
 
 ABOUT_READ = f"""
-<b>➻ <a href='https://t.me/{app.username}'>{app.name}</a> ɪs ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛ-ʙᴏᴛ.</b>
-<b>➻ <a href='https://t.me/{app.username}'>{app.name}</a> ʀᴇᴘʟɪᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴛᴏ ᴀ ᴜsᴇʀ.</b>
-<b>➻ ʜᴇʟᴘs ʏᴏᴜ ɪɴ ᴀᴄᴛɪᴠᴀᴛɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘs.</b>
-<b>➻ ᴡʀɪᴛᴛᴇɴ ɪɴ <a href='https://www.python.org'>ᴘʏᴛʜᴏɴ</a> ᴡɪᴛʜ <a href='https://www.mongodb.com'>ᴍᴏɴɢᴏ-ᴅʙ</a> ᴀs ᴀ ᴅᴀᴛᴀʙᴀsᴇ</b>
-<b>──────────────</b>
-<b>➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ <a href='https://t.me/{app.username}'>{app.name}</a></b>
+<b>- <a href='https://t.me/{app.username}'>{app.name}</a> is an ai based chat-bot.</b>
+<b>- <a href='https://t.me/{app.username}'>{app.name}</a> replies automatically to a user.</b>
+<b>- helps you in activating your groups.</b>
+<b>- written in <a href='https://www.python.org'>python</a> with <a href='https://www.mongodb.com'>mongo-db</a> as a database</b>
+<b>--------------</b>
+<b>- click on the buttons given below for getting basic help and info about <a href='https://t.me/{app.username}'>{app.name}</a></b>
 """

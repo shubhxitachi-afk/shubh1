@@ -112,7 +112,7 @@ async def process_ai_response(client: Client, message: Message, chatai):
 @adminsOnly("can_delete_messages")
 async def chaton_(_, m: Message):
     await m.reply_text(
-        f"ᴄʜᴀᴛ: {m.chat.title}\n<b>ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.</b>",
+        f"chat: {m.chat.title}\n<b>choose an option to enable/disable chatbot.</b>",
         reply_markup=InlineKeyboardMarkup(CHATBOT_ON),
     )
 

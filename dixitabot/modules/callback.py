@@ -32,7 +32,7 @@ async def cb_handler(_, query: CallbackQuery):
         )
     elif query.data == "CLOSE":
         await query.message.delete()
-        await query.answer("ᴄʟᴏsᴇᴅ ᴍᴇɴᴜ!", show_alert=True)
+        await query.answer("closed menu!", show_alert=True)
     elif query.data == "BACK":
         await query.message.edit(
             text=START,
@@ -80,33 +80,33 @@ async def cb_handler(_, query: CallbackQuery):
         user_status = (await query.message.chat.get_member(user_id)).status
         if user_status not in [CMS.OWNER, CMS.ADMINISTRATOR]:
             return await query.answer(
-                "ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴇᴠᴇɴ ᴀɴ ᴀᴅᴍɪɴ, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪs ᴇxᴘʟᴏsɪᴠᴇ sʜɪᴛ!",
+                "you're not even an admin, don't try this explosive shit!",
                 show_alert=True,
             )
             
         is_DAXX = DAXX.find_one({"chat_id": query.message.chat.id})
         if not is_DAXX:
-            await query.edit_message_text("<b>ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ.</b>")
+            await query.edit_message_text("<b>chat-bot already enabled.</b>")
         else:
             DAXX.delete_one({"chat_id": query.message.chat.id})
             if redis_db:
                 redis_db.set(f"chatbot_disabled_{query.message.chat.id}", "0", ex=3600)
-            await query.edit_message_text(f"<b>ᴄʜᴀᴛ-ʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ</b> {query.from_user.mention}.")
+            await query.edit_message_text(f"<b>chat-bot enabled by</b> {query.from_user.mention}.")
 
     elif query.data == "rmchat":
         user_id = query.from_user.id
         user_status = (await query.message.chat.get_member(user_id)).status
         if user_status not in [CMS.OWNER, CMS.ADMINISTRATOR]:
             return await query.answer(
-                "ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴇᴠᴇɴ ᴀɴ ᴀᴅᴍɪɴ, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪs ᴇxᴘʟᴏsɪᴠᴇ sʜɪᴛ!",
+                "you're not even an admin, don't try this explosive shit!",
                 show_alert=True,
             )
             
         is_DAXX = DAXX.find_one({"chat_id": query.message.chat.id})
         if is_DAXX:
-            await query.edit_message_text("<b>ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ.</b>")
+            await query.edit_message_text("<b>chat-bot already disabled.</b>")
         else:
             DAXX.insert_one({"chat_id": query.message.chat.id})
             if redis_db:
                 redis_db.set(f"chatbot_disabled_{query.message.chat.id}", "1", ex=3600)
-            await query.edit_message_text(f"<b>ᴄʜᴀᴛ-ʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ</b> {query.from_user.mention}.")
+            await query.edit_message_text(f"<b>chat-bot disabled by</b> {query.from_user.mention}.")
