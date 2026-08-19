@@ -1,3 +1,4 @@
+FROM python:3.10-slim
 FROM python:latest
 
 RUN apt-get update -y && apt-get upgrade -y
