@@ -3,14 +3,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = "24509589"
-API_HASH = "717cf21d94c4934bcbe1eaa1ad86ae75"
-BOT_TOKEN = "8568457723:AAFeCfdNRIi6wNYtlhfpO91WFNlG40fHEkc"
-MONGO_URL = "mongodb+srv://vclub:vclub@vclub.hauilrr.mongodb.net/?retryWrites=true&w=majority"
-OWNER_ID = "8322551557"
-SUPPORT_GRP = "HEROKUFREECC"
-UPDATE_CHNL = "ALLTYPECC"
-OWNER_USERNAME = "Imeshu"
+API_ID = "34829388"
+API_HASH = "30df7fd725bd39aa2e3b7a55b15a182b"
+BOT_TOKEN = "8954458459:AAHRTJucDx31wUKbCQhF0ICzJ4pUtN5_VuE"
+MONGO_URL = "mongodb+srv://shubhxitachi_db_user:3r1jKiHGmAyd93wy@nezukonbot.wkzudm6.mongodb.net/?appName=nezukonbot"
+OWNER_ID = "8888788314"
+SUPPORT_GRP = "@nezukobotupdatesx1"
+UPDATE_CHNL = "@nezukobotupdatesx1"
+OWNER_USERNAME = "@itachix201"
 
 # Additional settings
-OWNER = [8322551557]
+OWNER = [8888788314]
