@@ -1,7 +1,8 @@
 FROM python:3.10-slim
 
 RUN apt-get update -y && apt-get upgrade -y && \
-    apt-get install -y --no-install-recommends gcc g++ git && \
+    apt-get install -y --no-install-recommends gcc g++ git ca-certificates && \
+    update-ca-certificates && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
